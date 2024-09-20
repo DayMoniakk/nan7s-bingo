@@ -1,0 +1,141 @@
+keys,en,fr
+ui_welcome,Welcome to <br /> Everyday Nan7s Bingo!,Bienvenue au <br /> Bingo quotidien de Nan7s !
+ui_select_stream,Select a stream:,Selectionnez un stream:
+ui_category_souls_like,Souls-like,Souls-like
+ui_category_art,Art,Art
+ui_category_horror_games,Horror Games,Jeux d'Horreur
+ui_category_other_games,Other Games, Autres Jeux
+ui_about_nan,<b>Nan</b> (Nan7s_Peluche) is an independent Belgian streamer.<br />She is a clumsy clown who enjoys souls-like games<br />and drawing.,<b>Nan</b> (Nan7s_Peluche) est une streameuse indépendante Belge.<br />C'est une clown maladroite qui aime les jeux souls-like<br />et le dessin.
+ui_about_credits,Brought to you by:<br /><a href="https://www.github.com/DayMoniakk" target="_blank">DayMoniakk</a> (Developer) -<a href="https://www.twitch.tv/nan7s_peluche" target="_blank">Nan7s_Peluche</a> &<a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> (Art)<br /><br />Highly inspired by <a href="https://bingo.berber.uk/" target="_blank">Everyday Cerber Bingo</a>.,Proposé par:<br /><a href="https://www.github.com/DayMoniakk" target="_blank">DayMoniakk</a> (développeur) -<a href="https://www.twitch.tv/nan7s_peluche" target="_blank">Nan7s_Peluche</a> &<a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> (Art)<br /><br />Fortement inspiré de <a href="https://bingo.berber.uk/" target="_blank">Everyday Cerber Bingo</a>.
+ui_hint_gray_tiles,The gray tiles are general actions that are not related to the current category.,Les cases grises représentent des actions générales qui ne sont pas liées à la catégorie actuelle.
+ui_help,"Examine the board before the stream.<br>It has 25 randomly generated prompts that we expect <b>Nan</b> to say, do, or mention.<br><br>Once she does, click on the appropriate prompt to mark it out.<br><b>Bingo</b> is complete when all prompts in the vertical, horizontal, or diagonal row are marked out.<br>The center is free by the way.<br><br>You don't win anything by playing this Bingo; it's just for fun.<br>Your board is randomly generated specifically for you.<br>If you are not sure if the prompt needs to be marked out, ask your fellow viewers.","Examinez votre grille avant le stream.<br>Elle contient 25 actions générées aléatoirement que nous attendons <b>Nan</b> de dire, de faire ou de mentionner.<br><br>Une fois qu'elle l'a fait, cliquez sur la case appropriée pour la cocher.<br>Le <b>Bingo</b> est complet lorsque toutes les cases dans la rangée verticale, horizontale ou diagonale sont cochées.<br>La case du milieu est gratuite.<br><br>Vous ne gagnerez rien en jouant ce Bingo; c'est juste pour le fun.<br>Votre grille est générée aléatoirement spécialement pour vous.<br>Si vous n'êtes pas sûr qu'une case doive être marquée, n'hésitez pas à demander aux autres viewers."
+
+generic_00,Tells a story about her work,Raconte une anecdote de son travail
+generic_01,Puts a typo in the stream title,Met une faute de frappe dans le titre du stream
+generic_02,Her dogs are barking,Ses chiens aboient
+generic_03,Can't stop laughing,Est morte de rire
+generic_04,Randomly curses in French,Jure en Français
+generic_05,Gets jumpscared by her phone,Sursaute à cause de son téléphone
+generic_06,Gets jumpscared by a stream alert,Sursaute à cause d'une alerte de stream
+generic_07,Is mean to someone in chat,Est méchant avec quelqu'un du chat
+generic_08,"You're jealous","""You're jealous"" <br> (tu es jaloux(se))"
+generic_09,Says something sus,Dit quelque chose de suspect
+generic_10,The stream buffers,Le stream lag
+generic_11,Forgets to remove the clown outfit,Oublie de retirer le costume de clown
+generic_12,Misreads a chat's message,Interprète mal un message du chat
+generic_13,Goes to the bathroom,Pause pipi
+generic_14,Technical difficulties,Difficultés techniques
+generic_15,Forgets to update the stream category,Oublie de changer la catégorie du stream
+generic_16,Asks chat for help,Demande de l'aide au chat
+generic_17,Doesn't get a joke,Ne comprend pas une blague
+generic_18,"Brain is not braining","""Brain is not braining"""
+generic_19,Obvious lie,Mensonge évident
+generic_20,Randomly starts singing,Commence à chanter sans raison
+generic_21,"I'm stupid","""I'm stupid"" (je suis stupide)"
+generic_22,Accidentally mutes herself and doesn't realize it,Se mute accidentellement sans s'en rendre compte
+generic_23,Starts eating or drinking,Commence à manger ou boire
+generic_24,Mentions how tired she is,Mentionne à quel point elle est fatiguée
+generic_25,Checks something on her phone,Vérifie quelque chose sur son téléphone
+generic_26,Changes stream settings mid-stream,Change le titre et la catégorie du stream en cours
+generic_27,Forgets what she was talking about mid-sentence,Oublie ce dont elle parlait au milieu de sa phrase
+generic_28,Struggles to pronounce a word,a des difficultés à prononcer un mot
+generic_29,Wonders if the sound volume is fine,Se demande si le volume sonore est correct
+generic_30,Mentions how cold or hot it is,Mentionne à quel point il fait froid ou chaud
+generic_31,Talks about a game she’s excited to play in the future,Parle d'un jeu auquel elle est impatiente de jouer à l'avenir
+generic_32,Says she needs to finish something after stream,Mentionne qu'elle doit finir quelque chose après le stream
+
+souls_like_00,Falls in the void,Tombe dans le vide
+souls_like_01,Dies from fall damage,Meurt de dégâts de chute
+souls_like_02,Beats a boss first try,Bat un boss du premier coup
+souls_like_03,Dies 10 times in a row on the same boss,Meurt 10 fois d'affilée sur le même boss
+souls_like_04,Gets jumpscared by the game,Sursaute à cause du jeu
+souls_like_05,Dies of greediness,Meurt car trop gourmande
+souls_like_06,Dies from an elevator accident,Meurt à cause d'un ascenseur
+souls_like_07,Ragequits the game,Rage quitte le jeu
+souls_like_08,Is blind,Est aveugle
+souls_like_09,Doesn't know where to go,Ne sais pas où aller
+souls_like_10,Slams her desk,Frappe son bureau
+souls_like_11,Accidentally attacks an NPC,Attaque accidentellement un PNJ
+souls_like_12,Wastes healing items when not needed,Gaspille un objet de santé alors que ce n'était pas nécessaire
+souls_like_13,Runs past enemies to avoid fighting,Court en évitant les ennemis
+souls_like_14,Dies trying to retrieve souls/XP,Meurt en essayant de récupérer ses souls/XP
+souls_like_15,Underestimates a weak-looking enemy,Sous estime un ennemi d'apparence faible
+souls_like_16,Dies to environmental hazards (like fire or poison),Meurt à cause de risques environnementaux (comme le feu ou le poison)
+souls_like_17,Misses an obvious shortcut,Rate un raccourci évident
+souls_like_18,Backstabs an enemy successfully,Poignarde un ennemi par derrière avec succès
+souls_like_19,Dies to a trap (like hidden arrows or a boulder),Meurt dans un piège (comme des flèches cachées ou un rocher)
+souls_like_20,Underestimates the range of an enemy's attack,Sous-estime la portée de l'attaque d'un ennemi
+souls_like_21,Spams dodge roll and dies anyway,Spamme la touche d'esquive mais meurt quand même
+souls_like_22,Dies immediately after healing,Meurt immédiatement après s'être soignée
+souls_like_23,Taunts or teases an enemy and then dies,Se moque d'un ennemi et meurt
+souls_like_24,Accidentally uses the wrong item during a fight,Utilise accidentellement le mauvais objet pendant un combat
+souls_like_25,Rolls off a cliff during a dodge,Fait une roulade d'esquive et glisse d'une grande hauteur
+souls_like_26,Gets killed by a surprise enemy ambush,Meurt dans une embuscade surprise de l'ennemi
+souls_like_27,Misses a dodge and gets hit by a huge attack,Rate une esquive et se fait frapper par une énorme attaque
+souls_like_28,Fails to dodge or block a simple attack,Ne parvient pas à esquiver ou à bloquer une attaque simple
+souls_like_29,Gets stuck in an infinite loop of dying and respawning in the same spot,Se retrouve coincé dans une boucle infinie de mort et de réapparition au même endroit
+
+art_00,A sussy song is playing,Une musique suspecte est jouée
+art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite
+art_02,Sings along with the song,Chante en même temps que la musique
+art_03,Forgets to save the project,Oublie de sauvegarder le projet
+art_04,Skips 2 songs in a row,Saute 2 musiques à la suite
+art_05,Is lost in her unnamed layers,Se perd dans ses calques sans nom
+art_06,Spends too long on one small part,Passe trop de temps sur une petite partie du dessin
+art_07,Compares her current work to a previous piece,Compare son dessin actuel à un dessin précédent
+art_08,Mentions needing a reference image,Mentionne le besoin d'une image de référence
+art_09,Accidentally draws on the wrong layer,Dessine accidentellement sur le mauvais calque
+art_10,Spends more time selecting colors than drawing,Passe plus de temps à sélectionner les couleurs qu'à dessiner
+art_11,Mentions not being sure how to draw something,Mentionne qu'elle n'est pas sûre de savoir comment dessiner quelque chose
+art_12,Complains about Krita,Se plaint de Krita
+art_13,Gets excited about a small success or improvement,Se réjouit d'un petit succès ou d'une amélioration
+art_14,"I have an idea","""I have an idea"" (j'ai une idée)"
+art_15,Asks chat for feedback,Demande au chat de donner son avis
+
+horror_game_00,Gets scared by a harmless NPC or object,Est effrayée par un PNJ ou un objet inoffensif
+horror_game_01,Ragequits the game,Rage quitte le jeu
+horror_game_02,Stays crouched and refuses to move,Reste accroupie et refuse de bouger
+horror_game_03,Is stuck on a puzzle,Reste bloquée sur un puzzle
+horror_game_04,Turns around repeatedly to check behind her,Se retourne à plusieurs reprises pour vérifier derrière elle
+horror_game_05,Pauses the game to calm down,Met le jeu en pause pour se calmer
+horror_game_06,Accidentally wastes a key item,Gaspille accidentellement un objet important
+horror_game_07,Loses track of the objective,Oublie l'objectif actuel
+horror_game_08,Gets lost in the same area repeatedly,Se perd dans la même zone à plusieurs reprises
+horror_game_09,Doesn't notice an obvious clue,Ne remarque pas un indice évident
+horror_game_10,Finds a safe room and doesn't want to leave,Trouve une pièce sécurisée et refuse de la quitter
+horror_game_11,Forgets a key mechanic or item,Oublie un élément ou une mécanique clé du jeu
+horror_game_12,Gets jumpscared by a stream alert or her phone,Sursaute à cause d'une alerte de stream ou de son téléphone
+horror_game_13,Screams for no reason,Crie pour aucune raison
+horror_game_14,Throws away ammo by mistake,Jette des munitions par erreur
+horror_game_15,Freaks out and throws her headphones,Fait tomber son casque en paniquant
+horror_game_16,Gets scared by her own reflection,Est effrayée par son propre reflet
+horror_game_17,Gets distracted by the chat and misses an important scene,Est distraite par le chat et rate une scène importante
+horror_game_18,Cannot find where to go next,Ne trouve pas où aller ensuite
+horror_game_19,Refuses to go through a door,Refuse de passer une porte
+horror_game_20,Screams,Crie
+horror_game_21,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
+horror_game_22,Spends too long hiding from an enemy,Passe trop de temps à se cacher d'un ennemi
+
+other_games_00,Spams jump during dialogue,Spamme la touche de saut pendant un dialogue
+other_games_01,Uses the wrong weapon or ability,Utilise la mauvaise arme ou compétence
+other_games_02,Doesn't know where to go,Ne sais pas où aller
+other_games_03,Pauses the game mid-combat,Met le jeu en pause en plein combat
+other_games_04,Complains about lag,Se plaint de lag
+other_games_05,Accidentally kills a friendly NPC,Tue accidentellement un PNJ allié
+other_games_06,Misses an easy jump,Rate un saut facile
+other_games_07,Gets lost in the UI,Se perd dans les menus
+other_games_08,Forgets an important item,Oublie un objet important
+other_games_09,Spams a spell or ability,Spamme une capacité ou un sort
+other_games_10,Dies to environmental hazards (like fire or poison),Meurt à cause de risques environnementaux (comme le feu ou le poison)
+other_games_11,Gets stuck in a glitch,Est bloquée dans un bug
+other_games_12,Leaves the character customization screen default,Laisse l'écran de création de personnage sur les options par défaut
+other_games_13,Dies in a tutorial,Meurt dans un tutoriel
+other_games_14,Misses a tutorial hint or clue,Ne remarque pas un indice du tutoriel
+other_games_15,"I'm stupid","""I'm stupid"" (je suis stupide)"
+other_games_16,Doesn't notice an obvious enemy,Ne remarque pas un ennemi évident
+other_games_17,Dies to an enemy much weaker than her,Meurt face à un ennemi beaucoup plus faible qu'elle
+other_games_18,Leaves a dialogue hanging to explore a side area,Laisse un dialogue en suspens pour explorer une zone secondaire
+other_games_19,Complains about a bug or glitch,Se plaint d'un bug ou d'un glitch
+other_games_20,Spends too long picking an item in the inventory,Passe trop de temps à choisir un objet dans l'inventaire
+other_games_21,Mentions a game-breaking bug,Mentionne un bug bloquant le jeu
+other_games_22,Forgets how to play,Oublie comment jouer

@@ -1,0 +1,59 @@
+.bingo-btn {
+    width: 185px;
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 4px solid transparent;
+    font-size: 20px;
+    padding: 2px;
+    user-select: none;
+    transition: background-color 0.5s, border 0.3s;
+}
+
+.bingo-btn.prompt-error {
+    background-color: red;
+    border: 4px solid #a51c1c;
+}
+
+.bingo-btn.prompt-generic {
+    background-color: rgb(202, 202, 202);
+    border: 4px solid #b9b9b9;
+}
+
+.middle-tile {
+    background: linear-gradient(to top, rgb(30, 59, 138), rgb(89, 124, 221));
+    border: none;
+    cursor: default;
+    overflow: hidden;
+}
+
+.middle-tile img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: scale 0.25s;
+}
+.middle-tile img:hover {
+    scale: 1.5;
+}
+
+button.highlighted, .middle-tile.highlighted {
+    background-color: #38A169;
+    border: 4px solid #31915e;
+}
+
+.bingo-container {
+    display: none;
+    height: calc(100vh - 70px);
+    width: 100%;
+    position: absolute;
+    top: 70px;
+}
+.bingo-container.transition {
+    display: block;
+    overflow: hidden;
+}
+.bingo-container.ready {
+    display: block;
+}
