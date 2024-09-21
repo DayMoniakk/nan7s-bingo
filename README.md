@@ -14,6 +14,7 @@ By default the project is setup to be deployed to [Netlify](https://www.netlify.
 
 ## Todo
 
+- [ ] Limit the amount of generic prompts in a bingo board
 - [ ] Saving the bingo board
 - [X] Localization
 - [ ] Better mobile experience
