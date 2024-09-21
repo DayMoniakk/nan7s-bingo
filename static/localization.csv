@@ -6,7 +6,7 @@ ui_category_art,Art,Art
 ui_category_horror_games,Horror Games,Jeux d'Horreur
 ui_category_other_games,Other Games, Autres Jeux
 ui_about_nan,<b>Nan</b> (Nan7s_Peluche) is an independent Belgian streamer.<br />She is a clumsy clown who enjoys souls-like games<br />and drawing.,<b>Nan</b> (Nan7s_Peluche) est une streameuse indépendante Belge.<br />C'est une clown maladroite qui aime les jeux souls-like<br />et le dessin.
-ui_about_credits,Brought to you by:<br /><a href="https://www.github.com/DayMoniakk" target="_blank">DayMoniakk</a> (Developer) -<a href="https://www.twitch.tv/nan7s_peluche" target="_blank">Nan7s_Peluche</a> &<a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> (Art)<br /><br />Highly inspired by <a href="https://bingo.berber.uk/" target="_blank">Everyday Cerber Bingo</a>.,Proposé par:<br /><a href="https://www.github.com/DayMoniakk" target="_blank">DayMoniakk</a> (développeur) -<a href="https://www.twitch.tv/nan7s_peluche" target="_blank">Nan7s_Peluche</a> &<a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> (Art)<br /><br />Fortement inspiré de <a href="https://bingo.berber.uk/" target="_blank">Everyday Cerber Bingo</a>.
+ui_about_credits,"Brought to you by:<br /><a href=""https://www.github.com/DayMoniakk"" target=""_blank"">DayMoniakk</a> (Developer) -<a href=""https://www.twitch.tv/nan7s_peluche"" target=""_blank"">Nan7s_Peluche</a> &<a href=""https://www.twitch.tv/gluelle"" target=""_blank"">Gluelle</a> (Art)<br /><br />Highly inspired by <a href=""https://bingo.berber.uk/"" target=""_blank"">Everyday Cerber Bingo</a>.","Proposé par:<br /><a href=""https://www.github.com/DayMoniakk"" target=""_blank"">DayMoniakk</a> (développeur) -<a href=""https://www.twitch.tv/nan7s_peluche"" target=""_blank"">Nan7s_Peluche</a> &<a href=""https://www.twitch.tv/gluelle"" target=""_blank"">Gluelle</a> (Art)<br /><br />Fortement inspiré de <a href=""https://bingo.berber.uk/"" target=""_blank"">Everyday Cerber Bingo</a>."
 ui_hint_gray_tiles,The gray tiles are general actions that are not related to the current category.,Les cases grises représentent des actions générales qui ne sont pas liées à la catégorie actuelle.
 ui_help,"Examine the board before the stream.<br>It has 25 randomly generated prompts that we expect <b>Nan</b> to say, do, or mention.<br><br>Once she does, click on the appropriate prompt to mark it out.<br><b>Bingo</b> is complete when all prompts in the vertical, horizontal, or diagonal row are marked out.<br>The center is free by the way.<br><br>You don't win anything by playing this Bingo; it's just for fun.<br>Your board is randomly generated specifically for you.<br>If you are not sure if the prompt needs to be marked out, ask your fellow viewers.","Examinez votre grille avant le stream.<br>Elle contient 25 actions générées aléatoirement que nous attendons <b>Nan</b> de dire, de faire ou de mentionner.<br><br>Une fois qu'elle l'a fait, cliquez sur la case appropriée pour la cocher.<br>Le <b>Bingo</b> est complet lorsque toutes les cases dans la rangée verticale, horizontale ou diagonale sont cochées.<br>La case du milieu est gratuite.<br><br>Vous ne gagnerez rien en jouant ce Bingo; c'est juste pour le fun.<br>Votre grille est générée aléatoirement spécialement pour vous.<br>Si vous n'êtes pas sûr qu'une case doive être marquée, n'hésitez pas à demander aux autres viewers."
 
@@ -18,7 +18,7 @@ generic_04,Randomly curses in French,Jure en Français
 generic_05,Gets jumpscared by her phone,Sursaute à cause de son téléphone
 generic_06,Gets jumpscared by a stream alert,Sursaute à cause d'une alerte de stream
 generic_07,Is mean to someone in chat,Est méchant avec quelqu'un du chat
-generic_08,"You're jealous","""You're jealous"" <br> (tu es jaloux(se))"
+generic_08,"""You're jealous""","""You're jealous"" <br> (tu es jaloux(se))"
 generic_09,Says something sus,Dit quelque chose de suspect
 generic_10,The stream buffers,Le stream lag
 generic_11,Forgets to remove the clown outfit,Oublie de retirer le costume de clown
@@ -28,10 +28,10 @@ generic_14,Technical difficulties,Difficultés techniques
 generic_15,Forgets to update the stream category,Oublie de changer la catégorie du stream
 generic_16,Asks chat for help,Demande de l'aide au chat
 generic_17,Doesn't get a joke,Ne comprend pas une blague
-generic_18,"Brain is not braining","""Brain is not braining"""
+generic_18,Brain is not braining,"""Brain is not braining"""
 generic_19,Obvious lie,Mensonge évident
 generic_20,Randomly starts singing,Commence à chanter sans raison
-generic_21,"I'm stupid","""I'm stupid"" (je suis stupide)"
+generic_21,"""I'm stupid""","""I'm stupid"" (je suis stupide)"
 generic_22,Accidentally mutes herself and doesn't realize it,Se mute accidentellement sans s'en rendre compte
 generic_23,Starts eating or drinking,Commence à manger ou boire
 generic_24,Mentions how tired she is,Mentionne à quel point elle est fatiguée
@@ -89,7 +89,7 @@ art_10,Spends more time selecting colors than drawing,Passe plus de temps à sé
 art_11,Mentions not being sure how to draw something,Mentionne qu'elle n'est pas sûre de savoir comment dessiner quelque chose
 art_12,Complains about Krita,Se plaint de Krita
 art_13,Gets excited about a small success or improvement,Se réjouit d'un petit succès ou d'une amélioration
-art_14,"I have an idea","""I have an idea"" (j'ai une idée)"
+art_14,"""I have an idea""","""I have an idea"" (j'ai une idée)"
 art_15,Asks chat for feedback,Demande au chat de donner son avis
 
 horror_game_00,Gets scared by a harmless NPC or object,Est effrayée par un PNJ ou un objet inoffensif
@@ -104,38 +104,38 @@ horror_game_08,Gets lost in the same area repeatedly,Se perd dans la même zone 
 horror_game_09,Doesn't notice an obvious clue,Ne remarque pas un indice évident
 horror_game_10,Finds a safe room and doesn't want to leave,Trouve une pièce sécurisée et refuse de la quitter
 horror_game_11,Forgets a key mechanic or item,Oublie un élément ou une mécanique clé du jeu
-horror_game_12,Gets jumpscared by a stream alert or her phone,Sursaute à cause d'une alerte de stream ou de son téléphone
-horror_game_13,Screams for no reason,Crie pour aucune raison
-horror_game_14,Throws away ammo by mistake,Jette des munitions par erreur
-horror_game_15,Freaks out and throws her headphones,Fait tomber son casque en paniquant
-horror_game_16,Gets scared by her own reflection,Est effrayée par son propre reflet
-horror_game_17,Gets distracted by the chat and misses an important scene,Est distraite par le chat et rate une scène importante
-horror_game_18,Cannot find where to go next,Ne trouve pas où aller ensuite
-horror_game_19,Refuses to go through a door,Refuse de passer une porte
-horror_game_20,Screams,Crie
-horror_game_21,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
-horror_game_22,Spends too long hiding from an enemy,Passe trop de temps à se cacher d'un ennemi
+horror_game_12,Calls an enemy "ugly" or "creepy",Traite un ennemi de "ugly" ou de "creepy" ("laid" ou "flippant"),
+horror_game_13,Misses something important while panicking,Manque quelque chose d'important en paniquant
+horror_game_14,Finds comfort in a non-threatening object (like a plant or chair),Se réconforte avec un objet non menaçant (comme une plante ou une chaise)
+horror_game_15,Randomly laughs at her own fear,Rit de sa propre peur
+horror_game_16,Runs in the wrong direction during a chase,Court dans la mauvaise direction pendant une course poursuite
+horror_game_17,Crouches to hide but gets caught immediately,S'accroupit pour se cacher mais se fait immédiatement attrapée
+horror_game_18,Uses an item by mistake,Utilise un objet par erreur
+horror_game_19,Crouch-walks through an entire area out of fear,Marche accroupie à travers une grande zone par peur
+horror_game_20,Tries to brute force a puzzle instead of solving it,Tente de forcer un puzzle au lieu de le résoudre normalement
+horror_game_21,Falls for an obvious trap or bait,Tombe dans un piège ou un appât évident
+horror_game_22,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
 
-other_games_00,Spams jump during dialogue,Spamme la touche de saut pendant un dialogue
-other_games_01,Uses the wrong weapon or ability,Utilise la mauvaise arme ou compétence
-other_games_02,Doesn't know where to go,Ne sais pas où aller
-other_games_03,Pauses the game mid-combat,Met le jeu en pause en plein combat
-other_games_04,Complains about lag,Se plaint de lag
-other_games_05,Accidentally kills a friendly NPC,Tue accidentellement un PNJ allié
-other_games_06,Misses an easy jump,Rate un saut facile
-other_games_07,Gets lost in the UI,Se perd dans les menus
-other_games_08,Forgets an important item,Oublie un objet important
-other_games_09,Spams a spell or ability,Spamme une capacité ou un sort
-other_games_10,Dies to environmental hazards (like fire or poison),Meurt à cause de risques environnementaux (comme le feu ou le poison)
-other_games_11,Gets stuck in a glitch,Est bloquée dans un bug
-other_games_12,Leaves the character customization screen default,Laisse l'écran de création de personnage sur les options par défaut
-other_games_13,Dies in a tutorial,Meurt dans un tutoriel
-other_games_14,Misses a tutorial hint or clue,Ne remarque pas un indice du tutoriel
-other_games_15,"I'm stupid","""I'm stupid"" (je suis stupide)"
-other_games_16,Doesn't notice an obvious enemy,Ne remarque pas un ennemi évident
-other_games_17,Dies to an enemy much weaker than her,Meurt face à un ennemi beaucoup plus faible qu'elle
-other_games_18,Leaves a dialogue hanging to explore a side area,Laisse un dialogue en suspens pour explorer une zone secondaire
-other_games_19,Complains about a bug or glitch,Se plaint d'un bug ou d'un glitch
-other_games_20,Spends too long picking an item in the inventory,Passe trop de temps à choisir un objet dans l'inventaire
-other_games_21,Mentions a game-breaking bug,Mentionne un bug bloquant le jeu
-other_games_22,Forgets how to play,Oublie comment jouer
+other_games_00,Gets jumpscared by the game,Sursaute à cause du jeu
+other_games_01,Ragequits the game,Rage quitte le jeu
+other_games_02,Is stuck on a puzzle,Reste bloquée sur un puzzle
+other_games_03,Dies in a stupid way,Meurt de façon stupide
+other_games_04,Loses track of the objective,Oublie l'objectif actuel
+other_games_05,Gets lost in the same area repeatedly,Se perd dans la même zone à plusieurs reprises
+other_games_06,Doesn't notice an obvious clue,Ne remarque pas un indice évident
+other_games_07,Fails a quick-time event,Echoue à un quick-time event (QTE)
+other_games_08,Forgets a key mechanic or control,Oublie une mécanique de jeu ou une touche importante
+other_games_09,Has to pause because the chat is making her laugh,Doit faire une pause parce que le chat la fait rire
+other_games_10,Uses an item by mistake,Utilise un objet par erreur
+other_games_11,Gets distracted and dies while reading chat,Se laisse distraire et meurt en lisant le chat
+other_games_12,Blames the game for something that was her fault,Accuse le jeu pour quelque chose qui était de sa faute
+other_games_13,Struggles with a basic platforming section,A des difficultés avec une section de plate-forme de base
+other_games_14,Fails to complete an easy task due to panic,Ne parvient pas à terminer une tâche facile à cause de la panique
+other_games_15,Misses a jump and falls to their death,Manque un saut et fait une chute mortelle
+other_games_16,Accidentally attacks an NPC,Attaque accidentellement un PNJ
+other_games_17,Tries to brute force a puzzle instead of solving it,Tente de forcer un puzzle au lieu de le résoudre normalement
+other_games_18,Accidentally wastes a key item,Gaspille accidentellement un objet important
+other_games_19,Falls for an obvious trap or bait,Tombe dans un piège ou un appât évident
+other_games_20,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
+other_games_21,Runs out of ammo or resources at a critical moment,Manque de munitions ou de ressources à un moment critique
+other_games_22,Complains about a bug or glitch,Se plaint d'un bug ou d'un glitch
