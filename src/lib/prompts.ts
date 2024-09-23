@@ -109,7 +109,7 @@ function fillPrompts(): void {
 }
 
 // Example constants
-const genericPromptsAmount: number = 33;
+const genericPromptsAmount: number = 35;
 let genericPrompts: string[] = [];
 
 const soulsLikePromptsAmount: number = 30;
