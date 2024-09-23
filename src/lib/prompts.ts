@@ -16,7 +16,7 @@ export interface Prompt {
     promptType: PromptType;
 }
 
-const MAX_GENERIC_RATIO: number = 0.5; // Max 50% generic prompts
+const MAX_GENERIC_RATIO: number = 0.4; // Max x% generic prompts
 const BINGO_CARD_SIZE: number = 25;    // Assuming a 5x5 bingo card
 
 export function preparePrompts(streamIndex: number): string {
