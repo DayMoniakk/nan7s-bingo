@@ -17,7 +17,7 @@ export interface Prompt {
 }
 
 const MAX_GENERIC_RATIO: number = 0.4; // Max x% generic prompts
-const BINGO_CARD_SIZE: number = 25;    // Assuming a 5x5 bingo card
+const BINGO_CARD_SIZE: number = 25; // Assuming a 5x5 bingo card
 
 export function preparePrompts(streamIndex: number): string {
     fillPrompts();
@@ -108,18 +108,17 @@ function fillPrompts(): void {
     }
 }
 
-// Example constants
-const genericPromptsAmount: number = 35;
+const genericPromptsAmount: number = 37;
 let genericPrompts: string[] = [];
 
-const soulsLikePromptsAmount: number = 30;
+const soulsLikePromptsAmount: number = 32;
 let soulsLikePrompts: string[] = [];
 
 const artPromptsAmount: number = 16;
 let artPrompts: string[] = [];
 
-const horrorGamePromptsAmount: number = 23;
+const horrorGamePromptsAmount: number = 24;
 let horrorGamePrompts: string[] = [];
 
-const otherGamesPromptsAmount: number = 23;
+const otherGamesPromptsAmount: number = 25;
 let otherGamesPrompts: string[] = [];

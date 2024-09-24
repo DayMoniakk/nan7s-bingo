@@ -1,6 +1,7 @@
 <script context="module" lang="ts">
     export interface Payload {
         index: number;
+        key: string;
     }
 </script>
 
@@ -30,7 +31,7 @@
     });
 
     function selectStream(index: number): void {
-        onStreamChosen({ index: index });
+        onStreamChosen({ index: index, key: streamTypes[index] });
     }
 
     function updateLanguage(): void {

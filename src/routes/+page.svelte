@@ -16,7 +16,7 @@
     let welcomeScreenVisible: boolean = false;
 
     function handleOnStreamChosen(event: Payload): void {
-        bingo.open(event.index);
+        bingo.open(event.index, event.key);
         welcomeScreenVisible = false;
         welcome.setIsOpen(false);
         bingoContainer.classList.add("transition"); // prevents the scrollbar to appear while the transition is playing
@@ -55,7 +55,7 @@
 {/if}
 
 <div bind:this={bingoContainer} class="bingo-container">
-    <Bingo bind:this={bingo} on:transitionEnd={handleTransitionEnd}/>
+    <Bingo bind:this={bingo} on:transitionEnd={handleTransitionEnd} />
 </div>
 
 <MobileWarning />

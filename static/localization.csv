@@ -45,6 +45,8 @@ generic_31,Talks about a game she’s excited to play in the future,Parle d'un j
 generic_32,Says she needs to finish something after stream,Mentionne qu'elle doit finir quelque chose après le stream
 generic_33,*Burps*,*Rote*
 generic_34,*Sneezes*,*Eternue*
+generic_35,Talks about food or being hungry,Parle de nourriture ou d'avoir faim
+generic_36,Mentions upcoming stream or future plans,Mentionne le prochain stream ou un futur projet
 
 souls_like_00,Falls in the void,Tombe dans le vide
 souls_like_01,Dies from fall damage,Meurt de dégâts de chute
@@ -76,6 +78,8 @@ souls_like_26,Gets killed by a surprise enemy ambush,Meurt dans une embuscade su
 souls_like_27,Misses a dodge and gets hit by a huge attack,Rate une esquive et se fait frapper par une énorme attaque
 souls_like_28,Fails to dodge or block a simple attack,Ne parvient pas à esquiver ou à bloquer une attaque simple
 souls_like_29,Gets stuck in an infinite loop of dying and respawning in the same spot,Se retrouve coincé dans une boucle infinie de mort et de réapparition au même endroit
+souls_like_30,Complains about the game being unfair,Se plaint que le jeu est injuste
+souls_like_31,Reads chat while in a boss fight,Lis le chat pendant un combat de boss
 
 art_00,A sussy song is playing,Une musique suspecte est jouée
 art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite
@@ -117,6 +121,7 @@ horror_game_19,Crouch-walks through an entire area out of fear,Marche accroupie 
 horror_game_20,Tries to brute force a puzzle instead of solving it,Tente de forcer un puzzle au lieu de le résoudre normalement
 horror_game_21,Falls for an obvious trap or bait,Tombe dans un piège ou un appât évident
 horror_game_22,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
+horror_game_23,"""I'm scared""","""I'm scared"" (j'ai peur)"
 
 other_games_00,Gets jumpscared by the game,Sursaute à cause du jeu
 other_games_01,Ragequits the game,Rage quitte le jeu
@@ -141,3 +146,6 @@ other_games_19,Falls for an obvious trap or bait,Tombe dans un piège ou un app�
 other_games_20,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
 other_games_21,Runs out of ammo or resources at a critical moment,Manque de munitions ou de ressources à un moment critique
 other_games_22,Complains about a bug or glitch,Se plaint d'un bug ou d'un glitch
+other_games_23,Gets really unlucky,N'a pas eu de chance
+other_games_24,Does something risky and it works out by luck,Fait quelque chose de risqué et ça marche par pure chance
+other_games_25,Accidentally clicks/skips through important dialogue,Clique/saute accidentellement un dialogue important

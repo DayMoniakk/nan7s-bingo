@@ -101,6 +101,7 @@
     }
     .title img {
         width: 30px;
+        border-radius: 50%;
     }
 
     .help-btn {

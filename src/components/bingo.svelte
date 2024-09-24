@@ -11,15 +11,18 @@
     const dispatch = createEventDispatcher();
     let isOpen: boolean = false;
     let streamIndex: number = -1;
+    let streamKey: string = "ERROR";
     let generationSeed: string;
+    let categoryName: string;
     
     let bingoButtons: BingoButton[] = new Array(25);
     let bingoButtonsValues: boolean[] = new Array(25).fill(false);
     let hintTextContent: string;
 
-    export function open(_streamIndex: number): void {
+    export function open(_streamIndex: number, _key: string): void {
         isOpen = true;
         streamIndex = _streamIndex;
+        streamKey = _key;
         generationSeed = preparePrompts(streamIndex);
 
         window.onbeforeunload = function(): boolean {
@@ -29,9 +32,11 @@
         bingoButtonsValues[12] = true;
 
         hintTextContent = getTranslation("ui_hint_gray_tiles");
+        categoryName = getTranslation(streamKey);
 
         document.addEventListener("languageChanged", () => {
             hintTextContent = getTranslation("ui_hint_gray_tiles");
+            categoryName = getTranslation(streamKey);
         });
     }
 
@@ -196,6 +201,8 @@
 
 {#if isOpen}
     <div class="container" transition:fly={{ y: 500, duration: 500, delay: 500 }} on:introend={handleTransitionEnd}>
+        <span class="category-title">{categoryName}</span>
+
         <div class="bingo-grid">
             {#each Array(25) as _, index}
                 <BingoButton bind:this={bingoButtons[index]} onChecked={(event) => handleButtonsClick(index, event)} isMiddleTile={index === 12} on:easterEggTriggered={handleEasterEgg} />
@@ -236,5 +243,9 @@
         position: absolute;
         bottom: 5px;
         width: 100%;
+    }
+
+    .category-title {
+        text-decoration: none;
     }
 </style>
