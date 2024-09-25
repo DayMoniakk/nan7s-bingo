@@ -18,6 +18,9 @@
     let buttonRef: HTMLButtonElement;
     let isChecked: boolean = false;
     let easterEggDispatch = createEventDispatcher();
+    
+    let addedClass = "";
+    $: addedStyle = addedClass;
 
     onMount(() => {
         if (isMiddleTile) {
@@ -31,9 +34,11 @@
 
         if (prompt.promptType === PromptType.Generic) {
             buttonRef.classList.add("prompt-generic");
+            addedClass = "prompt-generic";
         } 
         else if (prompt.promptType === PromptType.Error) {
             buttonRef.classList.add("prompt-error");
+            addedClass = "prompt-error";
         }
 
         document.addEventListener("languageChanged", () => {
@@ -75,7 +80,7 @@
 {#if isMiddleTile}
     <button bind:this={buttonRef} class="bingo-btn middle-tile"><img src={getRandomImagePath()} alt="middle tile artwork" draggable="false" /></button>
 {:else}
-    <button bind:this={buttonRef} on:click={handleClick} class={isChecked ? "bingo-btn checked" : "bingo-btn"}></button>
+    <button bind:this={buttonRef} on:click={handleClick} class={isChecked ? "bingo-btn checked" : "bingo-btn " + addedStyle}></button>
 {/if}
 
 <style>
