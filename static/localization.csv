@@ -81,6 +81,8 @@ souls_like_28,Fails to dodge or block a simple attack,Ne parvient pas à esquive
 souls_like_29,Gets stuck in an infinite loop of dying and respawning in the same spot,Se retrouve coincé dans une boucle infinie de mort et de réapparition au même endroit
 souls_like_30,Complains about the game being unfair,Se plaint que le jeu est injuste
 souls_like_31,Reads chat while in a boss fight,Lis le chat pendant un combat de boss
+souls_like_32,Insults an enemy,Insulte un ennemi
+souls_like_33,"""I love this game""","""I love this game"" (j'adore ce jeu')"
 
 art_00,A sussy song is playing,Une musique suspecte est jouée
 art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite

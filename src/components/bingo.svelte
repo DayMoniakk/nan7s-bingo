@@ -14,6 +14,7 @@
     let streamKey: string = "ERROR";
     let generationSeed: string;
     let categoryName: string;
+    let alreadyWon: boolean = false;
     
     let bingoButtons: BingoButton[] = new Array(25);
     let bingoButtonsValues: boolean[] = new Array(25).fill(false);
@@ -44,9 +45,13 @@
         bingoButtonsValues[buttonIndex] = event.checked;
         if (!checkVictory()) {
             unhighlightAll();
+            alreadyWon = false;
         }
         else {
-           playVictoryEffects();
+            if (!alreadyWon) {
+                alreadyWon = true;
+                playVictoryEffects();
+            }
         }
     }
 
