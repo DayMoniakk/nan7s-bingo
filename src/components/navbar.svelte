@@ -75,7 +75,7 @@
 <style>
     nav {
         background-color: #385bbb;
-        width: 100%;
+        width: 100vw;
         height: 50px;
         user-select: none;
     }

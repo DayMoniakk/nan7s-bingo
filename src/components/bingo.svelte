@@ -15,7 +15,7 @@
     let generationSeed: string;
     let categoryName: string;
     let alreadyWon: boolean = false;
-    
+
     let bingoButtons: BingoButton[] = new Array(25);
     let bingoButtonsValues: boolean[] = new Array(25).fill(false);
     let hintTextContent: string;
@@ -26,9 +26,9 @@
         streamKey = _key;
         generationSeed = preparePrompts(streamIndex);
 
-        window.onbeforeunload = function(): boolean {
+        window.onbeforeunload = function (): boolean {
             return true;
-        }
+        };
 
         bingoButtonsValues[12] = true;
 
@@ -46,8 +46,7 @@
         if (!checkVictory()) {
             unhighlightAll();
             alreadyWon = false;
-        }
-        else {
+        } else {
             if (!alreadyWon) {
                 alreadyWon = true;
                 playVictoryEffects();
@@ -62,7 +61,7 @@
     function handleTransitionEnd(): void {
         dispatch("transitionEnd", {});
     }
-    
+
     //#region Check victory
 
     function checkVictory(): boolean {
@@ -207,6 +206,7 @@
 {#if isOpen}
     <div class="container" transition:fly={{ y: 500, duration: 500, delay: 500 }} on:introend={handleTransitionEnd}>
         <span class="category-title">{categoryName}</span>
+        
 
         <div class="bingo-grid">
             {#each Array(25) as _, index}
@@ -214,8 +214,7 @@
             {/each}
         </div>
 
-        <span transition:fade={{duration: 500, delay: 1000}}>{hintTextContent}</span>
-
+        <span>{hintTextContent}</span>
         <footer transition:fade={{ duration: 500, delay: 1500 }}>Seed: {generationSeed}</footer>
     </div>
 {/if}
@@ -235,10 +234,15 @@
     }
 
     span {
-        color: rgb(202, 202, 202);
+        color: rgb(153, 153, 153);
         display: block;
         text-align: center;
         text-decoration: underline;
+        margin-top: 5px;
+        width: fit-content;
+        margin: auto;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 
     footer {
@@ -252,5 +256,8 @@
 
     .category-title {
         text-decoration: none;
+        background-color: #456edf;
+        color: white;
+        user-select: none;
     }
 </style>

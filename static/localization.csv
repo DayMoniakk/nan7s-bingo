@@ -32,7 +32,7 @@ generic_18,"""Brain is not braining""","""Brain is not braining"""
 generic_19,Obvious lie,Mensonge évident
 generic_20,Randomly starts singing,Commence à chanter sans raison
 generic_21,"""I'm stupid""","""I'm stupid"" (je suis stupide)"
-generic_22,Accidentally mutes herself and doesn't realize it,Se mute accidentellement sans s'en rendre compte
+generic_22,Talks about her cat,Parle de son chat
 generic_23,Starts eating or drinking,Commence à manger ou boire
 generic_24,Mentions how tired she is,Mentionne à quel point elle est fatiguée
 generic_25,Checks something on her phone,Vérifie quelque chose sur son téléphone
@@ -83,6 +83,8 @@ souls_like_30,Complains about the game being unfair,Se plaint que le jeu est inj
 souls_like_31,Reads chat while in a boss fight,Lis le chat pendant un combat de boss
 souls_like_32,Insults an enemy,Insulte un ennemi
 souls_like_33,"""I love this game""","""I love this game"" (j'adore ce jeu')"
+souls_like_34,"""I'm dead""","""I'm dead"" (je suis morte)"
+souls_like_35,*Does weird screams*,*Fait des cris bizarres*
 
 art_00,A sussy song is playing,Une musique suspecte est jouée
 art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite
