@@ -25,7 +25,7 @@ generic_11,Forgets to remove the clown outfit,Oublie de retirer le costume de cl
 generic_12,Misreads a chat's message,Interprète mal un message du chat
 generic_13,Goes to the bathroom,Pause pipi
 generic_14,Technical difficulties,Difficultés techniques
-generic_15,Forgets to update the stream category,Oublie de changer la catégorie du stream
+generic_15,Has a goldfish memory,A une mémoire de poisson rouge
 generic_16,Asks chat for help,Demande de l'aide au chat
 generic_17,Doesn't get a joke,Ne comprend pas une blague
 generic_18,"""Brain is not braining""","""Brain is not braining"""
@@ -104,29 +104,28 @@ art_14,"""I have an idea""","""I have an idea"" (j'ai une idée)"
 art_15,Asks chat for feedback,Demande au chat de donner son avis
 
 horror_game_00,Gets scared by a harmless NPC or object,Est effrayée par un PNJ ou un objet inoffensif
-horror_game_01,Ragequits the game,Rage quitte le jeu
-horror_game_02,Stays crouched and refuses to move,Reste accroupie et refuse de bouger
-horror_game_03,Is stuck on a puzzle,Reste bloquée sur un puzzle
-horror_game_04,Turns around repeatedly to check behind her,Se retourne à plusieurs reprises pour vérifier derrière elle
-horror_game_05,Pauses the game to calm down,Met le jeu en pause pour se calmer
-horror_game_06,Accidentally wastes a key item,Gaspille accidentellement un objet important
-horror_game_07,Loses track of the objective,Oublie l'objectif actuel
-horror_game_08,Gets lost in the same area repeatedly,Se perd dans la même zone à plusieurs reprises
-horror_game_09,Doesn't notice an obvious clue,Ne remarque pas un indice évident
-horror_game_10,Finds a safe room and doesn't want to leave,Trouve une pièce sécurisée et refuse de la quitter
-horror_game_11,Forgets a key mechanic or item,Oublie un élément ou une mécanique clé du jeu
-horror_game_12,"Calls an enemy ""ugly"" or ""creepy""","Traite un ennemi de ""ugly"" ou de ""creepy"" (""laid"" ou ""flippant"")"
-horror_game_13,Misses something important while panicking,Manque quelque chose d'important en paniquant
-horror_game_14,Finds comfort in a non-threatening object (like a plant or chair),Se réconforte avec un objet non menaçant (comme une plante ou une chaise)
-horror_game_15,Randomly laughs at her own fear,Rit de sa propre peur
-horror_game_16,Runs in the wrong direction during a chase,Court dans la mauvaise direction pendant une course poursuite
-horror_game_17,Crouches to hide but gets caught immediately,S'accroupit pour se cacher mais se fait immédiatement attrapée
-horror_game_18,Uses an item by mistake,Utilise un objet par erreur
-horror_game_19,Crouch-walks through an entire area out of fear,Marche accroupie à travers une grande zone par peur
-horror_game_20,Tries to brute force a puzzle instead of solving it,Tente de forcer un puzzle au lieu de le résoudre normalement
-horror_game_21,Falls for an obvious trap or bait,Tombe dans un piège ou un appât évident
-horror_game_22,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
-horror_game_23,"""I'm scared""","""I'm scared"" (j'ai peur)"
+horror_game_01,Stays crouched and refuses to move,Reste accroupie et refuse de bouger
+horror_game_02,Is stuck on a puzzle,Reste bloquée sur un puzzle
+horror_game_03,Turns around repeatedly to check behind her,Se retourne à plusieurs reprises pour vérifier derrière elle
+horror_game_04,Pauses the game to calm down,Met le jeu en pause pour se calmer
+horror_game_05,Accidentally wastes a key item,Gaspille accidentellement un objet important
+horror_game_06,Loses track of the objective,Oublie l'objectif actuel
+horror_game_07,Gets lost in the same area repeatedly,Se perd dans la même zone à plusieurs reprises
+horror_game_08,Doesn't notice an obvious clue,Ne remarque pas un indice évident
+horror_game_09,Finds a safe room and doesn't want to leave,Trouve une pièce sécurisée et refuse de la quitter
+horror_game_10,Forgets a key mechanic or item,Oublie un élément ou une mécanique clé du jeu
+horror_game_11,"Calls an enemy ""ugly"" or ""creepy""","Traite un ennemi de ""ugly"" ou de ""creepy"" (""laid"" ou ""flippant"")"
+horror_game_12,Misses something important while panicking,Manque quelque chose d'important en paniquant
+horror_game_13,Finds comfort in a non-threatening object (like a plant or chair),Se réconforte avec un objet non menaçant (comme une plante ou une chaise)
+horror_game_14,Randomly laughs at her own fear,Rit de sa propre peur
+horror_game_15,Runs in the wrong direction during a chase,Court dans la mauvaise direction pendant une course poursuite
+horror_game_16,Crouches to hide but gets caught immediately,S'accroupit pour se cacher mais se fait immédiatement attrapée
+horror_game_17,Uses an item by mistake,Utilise un objet par erreur
+horror_game_18,Crouch-walks through an entire area out of fear,Marche accroupie à travers une grande zone par peur
+horror_game_19,Tries to brute force a puzzle instead of solving it,Tente de forcer un puzzle au lieu de le résoudre normalement
+horror_game_20,Falls for an obvious trap or bait,Tombe dans un piège ou un appât évident
+horror_game_21,Ignores tutorial hints or on-screen prompts,Ignore les conseils du didacticiel ou les instructions à l'écran
+horror_game_22,"""I'm scared""","""I'm scared"" (j'ai peur)"
 
 other_games_00,Gets jumpscared by the game,Sursaute à cause du jeu
 other_games_01,Ragequits the game,Rage quitte le jeu

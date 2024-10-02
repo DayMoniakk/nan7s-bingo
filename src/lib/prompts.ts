@@ -117,7 +117,7 @@ let soulsLikePrompts: string[] = [];
 const artPromptsAmount: number = 16;
 let artPrompts: string[] = [];
 
-const horrorGamePromptsAmount: number = 24;
+const horrorGamePromptsAmount: number = 23;
 let horrorGamePrompts: string[] = [];
 
 const otherGamesPromptsAmount: number = 25;
