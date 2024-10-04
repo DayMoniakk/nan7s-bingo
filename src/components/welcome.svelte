@@ -17,6 +17,7 @@
         "ui_category_souls_like", "ui_category_art", "ui_category_horror_games", "ui_category_other_games"
     ];
 
+    let container: HTMLElement;
     let isOpen = true;
     let welcomeText: HTMLElement;
     let selectStreamText: HTMLElement;
@@ -51,9 +52,13 @@
     export function setIsOpen(value: boolean): void {
         isOpen = value;
     }
+
+    function handleTransitionStart() {
+
+    }
 </script>
 
-<div class="container" transition:fly={{ y: -500, duration: 500 }}>
+<div bind:this={container} class="container" transition:fly={{ y: -500, duration: 500 }} on:outrostart={handleTransitionStart}>
     <h1 bind:this={welcomeText}>
         Welcome to
         <br />

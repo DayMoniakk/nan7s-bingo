@@ -5,6 +5,7 @@ interface TranslationData {
   keys: string;
   en: string;
   fr: string;
+  [key: string]: string; // This allows access to any key using a string
 }
 
 let translations: TranslationData[] = [];
@@ -25,7 +26,7 @@ export const loadCSV = async () => {
 };
 
 // Function to retrieve the translation
-export const getTranslation = (key: string) => {
+export const getTranslation = (key: string): string => {
   const translation = translations.find((t) => t.keys === key);
   if (!translation) return key; // If the key does not exist, returns the key itself
   

@@ -19,7 +19,6 @@ export function setLanguage(language: string): void {
 
     localStorage.setItem('language', language);
     currentLanguage = language;
-    console.log('Language changed to', language);
 
     document.dispatchEvent(new CustomEvent('languageChanged', {}));
 }

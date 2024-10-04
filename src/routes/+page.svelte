@@ -71,7 +71,7 @@
         background: linear-gradient(to bottom, #1e2a38, #2a2a6b);
         margin: 0;
         box-sizing: border-box;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .loading {

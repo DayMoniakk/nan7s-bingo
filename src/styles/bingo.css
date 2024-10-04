@@ -45,14 +45,16 @@ button.highlighted, .middle-tile.highlighted {
 
 .bingo-container {
     display: none;
-    height: calc(100vh - 70px);
     width: 100%;
-    position: absolute;
     top: 70px;
+    height: fit-content;
 }
-.bingo-container.transition {
+.bingo-container.transition{
     display: block;
     overflow: hidden;
+    position: fixed;
+    top: 50px;
+    height: 100vh;
 }
 .bingo-container.ready {
     display: block;

@@ -12,7 +12,6 @@
     let isOpen: boolean = false;
     let streamIndex: number = -1;
     let streamKey: string = "ERROR";
-    let generationSeed: string;
     let categoryName: string;
     let alreadyWon: boolean = false;
 
@@ -24,8 +23,9 @@
         isOpen = true;
         streamIndex = _streamIndex;
         streamKey = _key;
-        generationSeed = preparePrompts(streamIndex);
-
+        const generationSeed = preparePrompts(streamIndex);
+        console.log(`Seed: ${generationSeed}`);
+        
         window.onbeforeunload = function (): boolean {
             return true;
         };
@@ -205,17 +205,13 @@
 
 {#if isOpen}
     <div class="container" transition:fly={{ y: 500, duration: 500, delay: 500 }} on:introend={handleTransitionEnd}>
-        <span class="category-title">{categoryName}</span>
-        
-
         <div class="bingo-grid">
             {#each Array(25) as _, index}
-                <BingoButton bind:this={bingoButtons[index]} onChecked={(event) => handleButtonsClick(index, event)} isMiddleTile={index === 12} on:easterEggTriggered={handleEasterEgg} />
+                <BingoButton bind:this={bingoButtons[index]} onChecked={(event) => handleButtonsClick(index, event)} isMiddleTile={index === 12} on:easterEggTriggered={handleEasterEgg} {categoryName} />
             {/each}
         </div>
 
         <span>{hintTextContent}</span>
-        <footer transition:fade={{ duration: 500, delay: 1500 }}>Seed: {generationSeed}</footer>
     </div>
 {/if}
 
@@ -243,21 +239,5 @@
         margin: auto;
         padding: 5px 10px;
         border-radius: 5px;
-    }
-
-    footer {
-        display: block;
-        text-align: center;
-        color: rgb(121, 121, 121);
-        position: absolute;
-        bottom: 5px;
-        width: 100%;
-    }
-
-    .category-title {
-        text-decoration: none;
-        background-color: #456edf;
-        color: white;
-        user-select: none;
     }
 </style>

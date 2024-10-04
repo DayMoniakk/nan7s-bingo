@@ -13,6 +13,7 @@
 
     export let onChecked: (payload: Payload) => void;
     export let isMiddleTile: boolean = false;
+    export let categoryName: string = "Error";
 
     let promptContent: string;
     let buttonRef: HTMLButtonElement;
@@ -78,7 +79,10 @@
 </script>
 
 {#if isMiddleTile}
-    <button bind:this={buttonRef} class="bingo-btn middle-tile"><img src={getRandomImagePath()} alt="middle tile artwork" draggable="false" /></button>
+    <div class="button-container">
+        <button bind:this={buttonRef} class="bingo-btn middle-tile"><img src={getRandomImagePath()} alt="middle tile artwork" draggable="false" /></button>
+        <span>{categoryName}</span>
+    </div>
 {:else}
     <button bind:this={buttonRef} on:click={handleClick} class={isChecked ? "bingo-btn checked" : "bingo-btn " + addedStyle}></button>
 {/if}
@@ -87,5 +91,22 @@
     .bingo-btn.checked {
         background-color: #60a5fa;
         border: 4px solid #4b83c7;
+    }
+
+    .button-container{
+       position: relative;
+    }
+    .button-container span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #243a7781;
+        color: white;
+        padding: 2px 0;
+        word-wrap: break-word;
+        user-select: none;
+        pointer-events: none;
     }
 </style>
