@@ -108,10 +108,10 @@ function fillPrompts(): void {
     }
 }
 
-const genericPromptsAmount: number = 37;
+const genericPromptsAmount: number = 39;
 let genericPrompts: string[] = [];
 
-const soulsLikePromptsAmount: number = 36;
+const soulsLikePromptsAmount: number = 38;
 let soulsLikePrompts: string[] = [];
 
 const artPromptsAmount: number = 16;

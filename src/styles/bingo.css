@@ -21,14 +21,21 @@
     border: 4px solid #b9b9b9;
 }
 
+.bingo-btn.checked {
+    background-color: #60a5fa;
+    border: 4px solid #4b83c7;
+}
+
 .middle-tile {
     background: linear-gradient(to top, rgb(30, 59, 138), rgb(89, 124, 221));
+    background-color: rgb(89, 124, 221);
     border: none;
     cursor: default;
     overflow: hidden;
+    transition: background-color 0.25s;
 }
 
-.middle-tile img {
+.middle-tile img, .middle-tile-highlighted img {
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -38,9 +45,17 @@
     scale: 1.5;
 }
 
-button.highlighted, .middle-tile.highlighted {
+button.highlighted {
+    background-color: #38A169 !important;
+    border: 4px solid #31915e !important;
+}
+.middle-tile-highlighted {
+    background: none;
     background-color: #38A169;
-    border: 4px solid #31915e;
+    border: none;
+    cursor: default;
+    overflow: hidden;
+    transition: background-color 0.25s;
 }
 
 .bingo-container {

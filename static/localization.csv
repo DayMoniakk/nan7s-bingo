@@ -47,7 +47,8 @@ generic_33,*Burps*,*Rote*
 generic_34,*Sneezes*,*Eternue*
 generic_35,Talks about food or being hungry,Parle de nourriture ou d'avoir faim
 generic_36,Mentions upcoming stream or future plans,Mentionne le prochain stream ou un futur projet
-generic_35,Missclicks,Missclick
+generic_37,Missclicks,Missclick
+generic_38,Checks Discord,Regarde Discord
 
 souls_like_00,Falls in the void,Tombe dans le vide
 souls_like_01,Dies from fall damage,Meurt de dégâts de chute
@@ -85,6 +86,8 @@ souls_like_32,Insults an enemy,Insulte un ennemi
 souls_like_33,"""I love this game""","""I love this game"" (j'adore ce jeu')"
 souls_like_34,"""I'm dead""","""I'm dead"" (je suis morte)"
 souls_like_35,*Does weird screams*,*Fait des cris bizarres*
+souls_like_36,Beats a boss,Bat un boss
+souls_like_37,Dies on a boss in less than 10s,Meurt contre un boss en moins de 10s
 
 art_00,A sussy song is playing,Une musique suspecte est jouée
 art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite

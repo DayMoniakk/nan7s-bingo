@@ -22,6 +22,8 @@
     
     let addedClass = "";
     $: addedStyle = addedClass;
+    let isHighlighted: boolean = false;
+    $: isHighlightedReactive = isHighlighted;
 
     onMount(() => {
         if (isMiddleTile) {
@@ -34,11 +36,9 @@
         buttonRef.innerHTML = getTranslation(promptContent);
 
         if (prompt.promptType === PromptType.Generic) {
-            buttonRef.classList.add("prompt-generic");
             addedClass = "prompt-generic";
         } 
         else if (prompt.promptType === PromptType.Error) {
-            buttonRef.classList.add("prompt-error");
             addedClass = "prompt-error";
         }
 
@@ -55,11 +55,11 @@
     }
 
     export function highlight(): void {
-        buttonRef.classList.add("highlighted");
+        isHighlighted = true;
     }
 
     export function unhighlight(): void {
-        buttonRef.classList.remove("highlighted");
+        isHighlighted = false;
     }
 
     let last7Calls: number[] = [];
@@ -80,19 +80,14 @@
 
 {#if isMiddleTile}
     <div class="button-container">
-        <button bind:this={buttonRef} class="bingo-btn middle-tile"><img src={getRandomImagePath()} alt="middle tile artwork" draggable="false" /></button>
+        <button bind:this={buttonRef} class={"bingo-btn " + (isHighlightedReactive ? "middle-tile-highlighted" : "middle-tile")}><img src={getRandomImagePath()} alt="middle tile artwork" draggable="false" /></button>
         <span>{categoryName}</span>
     </div>
 {:else}
-    <button bind:this={buttonRef} on:click={handleClick} class={isChecked ? "bingo-btn checked" : "bingo-btn " + addedStyle}></button>
+    <button bind:this={buttonRef} on:click={handleClick} class={ "bingo-btn " + (isChecked ? "checked " : "") + addedStyle + (isHighlightedReactive ? " highlighted" : "")}></button>
 {/if}
 
 <style>
-    .bingo-btn.checked {
-        background-color: #60a5fa;
-        border: 4px solid #4b83c7;
-    }
-
     .button-container{
        position: relative;
     }
