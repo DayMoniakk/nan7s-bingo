@@ -21,34 +21,33 @@ generic_07,Is mean to someone in chat,Est méchante avec quelqu'un du chat
 generic_08,"""You're jealous""","""You're jealous"" <br> (tu es jaloux(se))"
 generic_09,Says something sus,Dit quelque chose de suspect
 generic_10,The stream buffers,Le stream lag
-generic_11,Forgets to remove the clown outfit,Oublie de retirer le costume de clown
-generic_12,Misreads a chat's message,Interprète mal un message du chat
-generic_13,Goes to the bathroom,Pause pipi
-generic_14,Technical difficulties,Difficultés techniques
-generic_15,Has a goldfish memory,A une mémoire de poisson rouge
-generic_16,Asks chat for help,Demande de l'aide au chat
-generic_17,Doesn't get a joke,Ne comprend pas une blague
-generic_18,"""Brain is not braining""","""Brain is not braining"""
-generic_19,Obvious lie,Mensonge évident
-generic_20,Randomly starts singing,Commence à chanter sans raison
-generic_21,"""I'm stupid""","""I'm stupid"" (je suis stupide)"
-generic_22,Talks about her cat,Parle de son chat
-generic_23,Starts eating or drinking,Commence à manger ou boire
-generic_24,Mentions how tired she is,Mentionne à quel point elle est fatiguée
-generic_25,Checks something on her phone,Vérifie quelque chose sur son téléphone
-generic_26,Changes stream settings mid-stream,Change le titre et la catégorie du stream en cours
-generic_27,Forgets what she was talking about mid-sentence,Oublie ce dont elle parlait au milieu de sa phrase
-generic_28,Struggles to pronounce a word,a des difficultés à prononcer un mot
-generic_29,Wonders if the sound volume is fine,Se demande si le volume sonore est correct
-generic_30,Mentions how cold or hot it is,Mentionne à quel point il fait froid ou chaud
-generic_31,Talks about a game she’s excited to play in the future,Parle d'un jeu auquel elle est impatiente de jouer à l'avenir
-generic_32,Says she needs to finish something after stream,Mentionne qu'elle doit finir quelque chose après le stream
-generic_33,*Burps*,*Rote*
-generic_34,*Sneezes*,*Eternue*
-generic_35,Talks about food or being hungry,Parle de nourriture ou d'avoir faim
-generic_36,Mentions upcoming stream or future plans,Mentionne le prochain stream ou un futur projet
-generic_37,Missclicks,Missclick
-generic_38,Checks Discord,Regarde Discord
+generic_11,Misreads a chat's message,Interprète mal un message du chat
+generic_12,Goes to the bathroom,Pause pipi
+generic_13,Technical difficulties,Difficultés techniques
+generic_14,Has a goldfish memory,A une mémoire de poisson rouge
+generic_15,Asks chat for help,Demande de l'aide au chat
+generic_16,Doesn't get a joke,Ne comprend pas une blague
+generic_17,"""Brain is not braining""","""Brain is not braining"""
+generic_18,Obvious lie,Mensonge évident
+generic_19,Randomly starts singing,Commence à chanter sans raison
+generic_20,"""I'm stupid""","""I'm stupid"" (je suis stupide)"
+generic_21,Talks about her cat,Parle de son chat
+generic_22,Starts eating or drinking,Commence à manger ou boire
+generic_23,Mentions how tired she is,Mentionne à quel point elle est fatiguée
+generic_24,Checks something on her phone,Vérifie quelque chose sur son téléphone
+generic_25,Changes stream settings mid-stream,Change le titre ou la catégorie du stream en cours
+generic_26,Forgets what she was talking about mid-sentence,Oublie ce dont elle parlait au milieu de sa phrase
+generic_27,Struggles to pronounce a word,A des difficultés à prononcer un mot
+generic_28,Wonders if the sound volume is fine,Se demande si le volume sonore est correct
+generic_29,Mentions how cold or hot it is,Mentionne à quel point il fait froid ou chaud
+generic_30,Talks about a game she’s excited to play in the future,Parle d'un jeu auquel elle est impatiente de jouer à l'avenir
+generic_31,Says she needs to finish something after stream,Mentionne qu'elle doit finir quelque chose après le stream
+generic_32,*Burps*,*Rote*
+generic_33,*Sneezes*,*Eternue*
+generic_34,Talks about food or being hungry,Parle de nourriture ou d'avoir faim
+generic_35,Mentions upcoming stream or future plans,Mentionne le prochain stream ou un futur projet
+generic_36,Missclicks,Missclick
+generic_37,Checks Discord,Regarde Discord
 
 souls_like_00,Falls in the void,Tombe dans le vide
 souls_like_01,Dies from fall damage,Meurt de dégâts de chute
@@ -57,7 +56,7 @@ souls_like_03,Dies 10 times in a row on the same boss,Meurt 10 fois d'affilée s
 souls_like_04,Gets jumpscared by the game,Sursaute à cause du jeu
 souls_like_05,Dies of greediness,Meurt car trop gourmande
 souls_like_06,Dies from an elevator accident,Meurt à cause d'un ascenseur
-souls_like_07,Ragequits the game,Rage quitte le jeu
+souls_like_07,Finds a bonfire/site of grace,Trouve un feu de camp/site de grâce
 souls_like_08,Is blind,Est aveugle
 souls_like_09,Doesn't know where to go,Ne sais pas où aller
 souls_like_10,Slams her desk,Frappe son bureau
@@ -88,6 +87,8 @@ souls_like_34,"""I'm dead""","""I'm dead"" (je suis morte)"
 souls_like_35,*Does weird screams*,*Fait des cris bizarres*
 souls_like_36,Beats a boss,Bat un boss
 souls_like_37,Dies on a boss in less than 10s,Meurt contre un boss en moins de 10s
+souls_like_38,Equips another weapon,Equipe une autre arme
+souls_like_39,Activates a lever or a mechanism,Active un levier ou un mécanisme
 
 art_00,A sussy song is playing,Une musique suspecte est jouée
 art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite
@@ -105,6 +106,8 @@ art_12,Complains about Krita,Se plaint de Krita
 art_13,Gets excited about a small success or improvement,Se réjouit d'un petit succès ou d'une amélioration
 art_14,"""I have an idea""","""I have an idea"" (j'ai une idée)"
 art_15,Asks chat for feedback,Demande au chat de donner son avis
+art_16,Uses the symmetry tool,Utilise l'outil de symétrie
+art_17,Takes a break to think about the drawing,Prend une pause pour réfléchir au dessin
 
 horror_game_00,Gets scared by a harmless NPC or object,Est effrayée par un PNJ ou un objet inoffensif
 horror_game_01,Stays crouched and refuses to move,Reste accroupie et refuse de bouger
@@ -156,3 +159,5 @@ other_games_22,Complains about a bug or glitch,Se plaint d'un bug ou d'un glitch
 other_games_23,Gets really unlucky,N'a pas eu de chance
 other_games_24,Does something risky and it works out by luck,Fait quelque chose de risqué et ça marche par pure chance
 other_games_25,Accidentally clicks/skips through important dialogue,Clique/saute accidentellement un dialogue important
+other_games_26,Struggles to read a text/note,A des difficultés à lire un texte/une note
+other_games_27,Completes a mission/level,Finit une mission/un niveau
