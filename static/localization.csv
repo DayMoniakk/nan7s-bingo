@@ -48,6 +48,7 @@ generic_34,Talks about food or being hungry,Parle de nourriture ou d'avoir faim
 generic_35,Mentions upcoming stream or future plans,Mentionne le prochain stream ou un futur projet
 generic_36,Missclicks,Missclick
 generic_37,Checks Discord,Regarde Discord
+generic_38,Mentions her tea,Mentionne son thé
 
 souls_like_00,Falls in the void,Tombe dans le vide
 souls_like_01,Dies from fall damage,Meurt de dégâts de chute
@@ -75,7 +76,7 @@ souls_like_22,Dies immediately after healing,Meurt immédiatement après s'être
 souls_like_23,Taunts or teases an enemy and then dies,Se moque d'un ennemi et meurt
 souls_like_24,Accidentally uses the wrong item during a fight,Utilise accidentellement le mauvais objet pendant un combat
 souls_like_25,Rolls off a cliff during a dodge,Fait une roulade d'esquive et glisse d'une grande hauteur
-souls_like_26,Gets killed by a surprise enemy ambush,Meurt dans une embuscade surprise de l'ennemi
+souls_like_26,Gets surprised by an enemy ambush,Est surprise par une embuscade ennemie
 souls_like_27,Misses a dodge and gets hit by a huge attack,Rate une esquive et se fait frapper par une énorme attaque
 souls_like_28,Fails to dodge or block a simple attack,Ne parvient pas à esquiver ou à bloquer une attaque simple
 souls_like_29,Gets stuck in an infinite loop of dying and respawning in the same spot,Se retrouve coincé dans une boucle infinie de mort et de réapparition au même endroit
