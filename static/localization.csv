@@ -49,6 +49,7 @@ generic_35,Mentions upcoming stream or future plans,Mentionne le prochain stream
 generic_36,Missclicks,Missclick
 generic_37,Checks Discord,Regarde Discord
 generic_38,Mentions her tea,Mentionne son thé
+generic_39,Mentions Warframe, Mentionne Warframe
 
 souls_like_00,Falls in the void,Tombe dans le vide
 souls_like_01,Dies from fall damage,Meurt de dégâts de chute
@@ -74,22 +75,21 @@ souls_like_20,Underestimates the range of an enemy's attack,Sous-estime la port�
 souls_like_21,Spams dodge roll and dies anyway,Spamme la touche d'esquive mais meurt quand même
 souls_like_22,Dies immediately after healing,Meurt immédiatement après s'être soignée
 souls_like_23,Taunts or teases an enemy and then dies,Se moque d'un ennemi et meurt
-souls_like_24,Accidentally uses the wrong item during a fight,Utilise accidentellement le mauvais objet pendant un combat
-souls_like_25,Rolls off a cliff during a dodge,Fait une roulade d'esquive et glisse d'une grande hauteur
-souls_like_26,Gets surprised by an enemy ambush,Est surprise par une embuscade ennemie
-souls_like_27,Misses a dodge and gets hit by a huge attack,Rate une esquive et se fait frapper par une énorme attaque
-souls_like_28,Fails to dodge or block a simple attack,Ne parvient pas à esquiver ou à bloquer une attaque simple
-souls_like_29,Gets stuck in an infinite loop of dying and respawning in the same spot,Se retrouve coincé dans une boucle infinie de mort et de réapparition au même endroit
-souls_like_30,Complains about the game being unfair,Se plaint que le jeu est injuste
-souls_like_31,Reads chat while in a boss fight,Lis le chat pendant un combat de boss
-souls_like_32,Insults an enemy,Insulte un ennemi
-souls_like_33,"""I love this game""","""I love this game"" (j'adore ce jeu')"
-souls_like_34,"""I'm dead""","""I'm dead"" (je suis morte)"
-souls_like_35,*Does weird screams*,*Fait des cris bizarres*
-souls_like_36,Beats a boss,Bat un boss
-souls_like_37,Dies on a boss in less than 10s,Meurt contre un boss en moins de 10s
-souls_like_38,Equips another weapon,Equipe une autre arme
-souls_like_39,Activates a lever or a mechanism,Active un levier ou un mécanisme
+souls_like_24,Rolls off a cliff during a dodge,Fait une roulade d'esquive et glisse d'une grande hauteur
+souls_like_25,Gets surprised by an enemy ambush,Est surprise par une embuscade ennemie
+souls_like_26,Misses a dodge and gets hit by a huge attack,Rate une esquive et se fait frapper par une énorme attaque
+souls_like_27,Fails to dodge or block a simple attack,Ne parvient pas à esquiver ou à bloquer une attaque simple
+souls_like_28,Gets stuck in an infinite loop of dying and respawning in the same spot,Se retrouve coincé dans une boucle infinie de mort et de réapparition au même endroit
+souls_like_29,Complains about the game being unfair,Se plaint que le jeu est injuste
+souls_like_30,Reads chat while in a boss fight,Lis le chat pendant un combat de boss
+souls_like_31,Insults an enemy,Insulte un ennemi
+souls_like_32,"""I love this game""","""I love this game"" (j'adore ce jeu')"
+souls_like_33,"""I'm dead""","""I'm dead"" (je suis morte)"
+souls_like_34,*Does weird screams*,*Fait des cris bizarres*
+souls_like_35,Beats a boss,Bat un boss
+souls_like_36,Dies on a boss in less than 10s,Meurt contre un boss en moins de 10s
+souls_like_37,Equips another weapon,Equipe une autre arme
+souls_like_38,Activates a lever or a mechanism,Active un levier ou un mécanisme
 
 art_00,A sussy song is playing,Une musique suspecte est jouée
 art_01,Redraws the same thing several times in a row,Redessine la même chose plusieurs fois de suite
