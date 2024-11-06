@@ -18,6 +18,7 @@ By default the project is setup to be deployed to [Netlify](https://www.netlify.
 - [ ] Saving the bingo board
 - [X] Localization
 - [ ] Better mobile experience
+- [ ] Upgrade from Svelte 4 to Svelte 5 (will probably start from scratch)
 
 # For developers
 
