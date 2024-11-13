@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+* {
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-image: url("../background.png");
+  background-size: cover;
+  background-position: center;
+}

@@ -7,22 +7,14 @@ You can find the web-hosted version [here](https://nan7s-bingo.netlify.app/)
 
 ## Info
 
-Built using the front-end framework [Svelte](https://svelte.dev/) and Typescript.
+Built using the front-end framework [Vue](https://vuejs.org/) and Typescript.
 
-By default the project is setup to be deployed to [Netlify](https://www.netlify.com/).
-
+You can find the first version that is using [Svelte 4](https://svelte.dev/) on the `v1-svelte4` branch.
 
 ## Todo
 
-- [X] Limit the amount of generic prompts in a bingo board
-- [ ] Saving the bingo board
-- [X] Localization
-- [ ] Better mobile experience
-- [ ] Upgrade from Svelte 4 to Svelte 5 (will probably start from scratch)
-
 # For developers
 
-## Run Locally
 Install dependencies
 
 ```bash
@@ -32,10 +24,10 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run --dev --open
+  npm run dev
 ```
 
-Build for Netlify
+Build
 
 ```bash
   npm run build

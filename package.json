@@ -1,31 +1,35 @@
 {
-	"name": "nan-bingo",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"svelte": "^4.2.7",
-		"svelte-check": "^4.0.0",
-		"typescript": "^5.0.0",
-		"vite": "^5.0.3"
-	},
-	"type": "module",
-	"dependencies": {
-		"@sveltejs/adapter-netlify": "^4.3.4",
-		"@types/canvas-confetti": "^1.6.4",
-		"@types/papaparse": "^5.3.14",
-		"@types/seedrandom": "^3.0.8",
-		"canvas-confetti": "^1.9.3",
-		"papaparse": "^5.4.1",
-		"seedrandom": "^3.0.5"
-	}
+  "name": "nan-bingo-v2",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/js-cookie": "^3.0.6",
+    "@types/seedrandom": "^3.0.8",
+    "canvas-confetti": "^1.9.3",
+    "js-cookie": "^3.0.5",
+    "seedrandom": "^3.0.5",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.17.6",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/eslint-config-typescript": "^14.1.3",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint-plugin-vue": "^9.30.0",
+    "npm-run-all2": "^7.0.1",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.10"
+  }
 }

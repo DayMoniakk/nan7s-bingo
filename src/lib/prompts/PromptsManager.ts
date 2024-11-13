@@ -1,6 +1,14 @@
 import seedRandom from "seedrandom";
+import { isSeedOverriden, getSeedOverride } from "../DebugHandler";
+
+import { genericPrompts } from "./Generic";
+import { soulsLikePrompts } from "./SoulsLike";
+import { artPrompts } from "./Art";
+import { horrorGamesPrompts } from "./HorrorGames";
+import { otherGamesPrompts } from "./OtherGames";
 
 let rng: seedRandom.PRNG;
+let currentSeed: string;
 let availableCategoryPrompts: string[] = [];
 let availableGenericPrompts: string[] = [];
 let genericPromptCount: number = 0; // Count of used generic prompts
@@ -19,24 +27,35 @@ export interface Prompt {
 const MAX_GENERIC_RATIO: number = 0.4; // Max x% generic prompts
 const BINGO_CARD_SIZE: number = 25; // Assuming a 5x5 bingo card
 
-export function preparePrompts(streamIndex: number): string {
-    fillPrompts();
+export function getCurrentSeed(): string {
+    return currentSeed;
+}
 
-    let currentSeed: string = Math.random().toString(36).slice(2) + Date.now().toString(36);
-    rng = seedRandom(currentSeed);
+export function preparePrompts(streamIndex: number, seed: string = ""): string {
+    if (isSeedOverriden()) {
+        seed = getSeedOverride();
+    }
+
+    currentSeed = seed;
+
+    if (seed !== "") rng = seedRandom(seed);
+    else {
+        currentSeed = Math.random().toString(36).slice(2) + Date.now().toString(36);
+        rng = seedRandom(currentSeed);
+    }
 
     switch (streamIndex) {
         case 0:
-            availableCategoryPrompts = soulsLikePrompts;
+            availableCategoryPrompts = [...soulsLikePrompts];
             break;
         case 1:
-            availableCategoryPrompts = artPrompts;
+            availableCategoryPrompts = [...artPrompts];
             break;
         case 2:
-            availableCategoryPrompts = horrorGamePrompts;
+            availableCategoryPrompts = [...horrorGamesPrompts];
             break;
         case 3:
-            availableCategoryPrompts = otherGamesPrompts;
+            availableCategoryPrompts = [...otherGamesPrompts];
             break;
     }
 
@@ -84,41 +103,3 @@ function getCategoryPrompt(): string {
     const index: number = Math.floor(rng() * availableCategoryPrompts.length);
     return availableCategoryPrompts.splice(index, 1)[0];
 }
-
-function fillPrompts(): void {
-    // Fill the generic and category prompts
-    for (let i: number = 0; i < genericPromptsAmount; i++) {
-        genericPrompts.push(`generic_${i.toString().padStart(2, "0")}`);
-    }
-
-    for (let i: number = 0; i < soulsLikePromptsAmount; i++) {
-        soulsLikePrompts.push(`souls_like_${i.toString().padStart(2, "0")}`);
-    }
-
-    for (let i: number = 0; i < artPromptsAmount; i++) {
-        artPrompts.push(`art_${i.toString().padStart(2, "0")}`);
-    }
-
-    for (let i: number = 0; i < horrorGamePromptsAmount; i++) {
-        horrorGamePrompts.push(`horror_game_${i.toString().padStart(2, "0")}`);
-    }
-
-    for (let i: number = 0; i < otherGamesPromptsAmount; i++) {
-        otherGamesPrompts.push(`other_games_${i.toString().padStart(2, "0")}`);
-    }
-}
-
-const genericPromptsAmount: number = 40;
-let genericPrompts: string[] = [];
-
-const soulsLikePromptsAmount: number = 39;
-let soulsLikePrompts: string[] = [];
-
-const artPromptsAmount: number = 18;
-let artPrompts: string[] = [];
-
-const horrorGamePromptsAmount: number = 23;
-let horrorGamePrompts: string[] = [];
-
-const otherGamesPromptsAmount: number = 28;
-let otherGamesPrompts: string[] = [];
