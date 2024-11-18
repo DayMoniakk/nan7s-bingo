@@ -64,7 +64,10 @@ function handleNewBoardClick() {
                 <h2>Select a stream:</h2>
 
                 <div v-for="streamType in getStreamLength()" :key="streamType">
-                    <StreamButton :streamType="getStreamByIndex(streamType - 1)" :streamIndex="streamType - 1"
+                    <StreamButton 
+                        :streamType="getStreamByIndex(streamType - 1)" 
+                        :streamIndex="streamType - 1"
+                        :isNewCategory="streamType === 4"
                         @streamChoosed="onStreamClicked" />
                 </div>
             </div>

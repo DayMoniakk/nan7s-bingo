@@ -5,6 +5,7 @@ import { genericPrompts } from "./Generic";
 import { soulsLikePrompts } from "./SoulsLike";
 import { artPrompts } from "./Art";
 import { horrorGamesPrompts } from "./HorrorGames";
+import { rhythmGamesPrompts } from "./RhythmGames";
 import { otherGamesPrompts } from "./OtherGames";
 
 let rng: seedRandom.PRNG;
@@ -55,6 +56,9 @@ export function preparePrompts(streamIndex: number, seed: string = ""): string {
             availableCategoryPrompts = [...horrorGamesPrompts];
             break;
         case 3:
+            availableCategoryPrompts = [...rhythmGamesPrompts];
+            break
+        case 4:
             availableCategoryPrompts = [...otherGamesPrompts];
             break;
     }

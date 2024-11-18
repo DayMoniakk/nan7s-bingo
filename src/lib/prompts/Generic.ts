@@ -39,4 +39,5 @@ export const genericPrompts = [
   "Checks Discord",
   "Mentions her tea",
   "Mentions Warframe",
+  "Pronounces a word in a very Frenchy way",
 ];

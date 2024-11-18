@@ -3,6 +3,7 @@ export enum StreamType {
     SoulsLike = "Souls-like",
     Art = "Art",
     HorrorGames = "Horror Games",
+    RhythmGames = "Rhythm Games",
     OtherGames = "Other Games"
 }
 
@@ -15,6 +16,8 @@ export function getStreamByIndex(index: number): StreamType {
         case 2:
             return StreamType.HorrorGames;
         case 3:
+            return StreamType.RhythmGames;
+        case 4:
             return StreamType.OtherGames;
         default:
             return StreamType.Error;
@@ -22,5 +25,5 @@ export function getStreamByIndex(index: number): StreamType {
 }
 
 export function getStreamLength(): number {
-    return 4;
+    return 5;
 }

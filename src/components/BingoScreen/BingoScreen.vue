@@ -282,7 +282,11 @@ function unhighlightAll() {
             :tileIndex="tile - 1"
             @onTileChecked="(value: boolean) => handleTilesChecked(tile - 1, value)" />
         </div>
-        <span>The gray tiles are general actions that are not related to the current category.</span>
+        <span>
+            The gray tiles are general actions that are not related to the current category.
+            <br>
+            If a tile is impossible to complete, consider it as free.
+        </span>
     </div>
 </template>
 
@@ -312,7 +316,7 @@ function unhighlightAll() {
     margin: 20px auto;
 }
 span {
-        color: rgba(153, 153, 153, 0.616);
+        color: rgba(153, 153, 153, 0.815);
         display: block;
         text-align: center;
         margin-top: 5px;
