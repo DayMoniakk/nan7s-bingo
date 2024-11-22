@@ -1,15 +1,27 @@
 <script setup lang="ts">
-import { ref, onMounted, useTemplateRef } from 'vue';
+import { ref, onMounted, useTemplateRef, onUnmounted } from 'vue';
 import { setSeedOverride, toggleSaving, clearData, refreshBoard } from '@/lib/DebugHandler';
+import { getCurrentSeed } from '@/lib/prompts/PromptsManager';
 
 const isActive = ref(false);
 const isDebugWindowOpen = ref(false);
 const inputOverrideSeed = useTemplateRef<HTMLInputElement>('input-override-seed');
+const seed = ref('Current Seed: None');
 
 onMounted(() => {
     const urlParams = new URLSearchParams(window.location.search);
     isActive.value = urlParams.get('debug') != null;
+
+    document.addEventListener('DEBUG_OnBoardStarted', handleOnBoardStarted);
 });
+
+onUnmounted(() => {
+    document.removeEventListener('DEBUG_OnBoardStarted', handleOnBoardStarted);
+});
+
+function handleOnBoardStarted() {
+    seed.value = `Current Seed: ${getCurrentSeed()}`;
+}
 
 function handleOverrideSeed() {
     if (inputOverrideSeed.value) {
@@ -17,7 +29,6 @@ function handleOverrideSeed() {
         setSeedOverride(inputOverrideSeed.value.value);
     }
 }
-
 </script>
 
 <template>
@@ -26,6 +37,9 @@ function handleOverrideSeed() {
 
         <Transition name="scale">
             <div class="debug-window" v-if="isDebugWindowOpen">
+                <div class="debug-row">
+                    <span>{{ seed }}</span>
+                </div>
                 <div class="debug-row">
                     <span>Override Seed</span>
                     <input type="text" placeholder="Leave blank for random" @change="handleOverrideSeed" ref="input-override-seed">

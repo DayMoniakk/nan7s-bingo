@@ -1,18 +1,34 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, useTemplateRef } from 'vue';
 import StreamButton from './StreamButton.vue';
 import { getStreamLength, getStreamByIndex, StreamType } from '@/lib/StreamType';
 import UserData from '@/lib/UserData';
+import { getCurrentEvent, TimeEvent } from '@/lib/TimeEvents';
 
 const isOpen = ref(false);
 const emit = defineEmits(['onStreamChoosed', 'onTransitionEnded']);
 const isLoadWindowOpen = ref(false);
+const additionalCredits = ref(Array<string>());
+const welcomeScreenContainer = useTemplateRef<HTMLDivElement>('welcome-screen-container');
 
 let indexToLoad = -1;
 let steamToLoad = StreamType.Error;
 
 onMounted(() => {
-    isOpen.value = true
+    isOpen.value = true;
+
+    setTimeout(() => {
+        switch (getCurrentEvent()) {
+            case TimeEvent.Christmas:
+                const credits = Array<string>();
+                credits.push("https://pixabay.com/users/kinggodarts-20322799/");
+                credits.push("kinggodarts");
+                credits.push("(Christmas background)");
+                additionalCredits.value = credits;
+                welcomeScreenContainer.value?.classList.add("event");
+                break;
+        }
+    }, 100);
 });
 
 function onStreamClicked(streamIndex: number) {
@@ -22,10 +38,22 @@ function onStreamClicked(streamIndex: number) {
 function checkForSavedBoard(streamIndex: number) {
     const streamType = getStreamByIndex(streamIndex);
     if (UserData.hasSavedBoard(streamType)) {
+
+        const isSaveFileValid = UserData.checkSavedBoardVersion(streamType);
+        if (!isSaveFileValid) {
+            UserData.clearBoard(streamType);
+            console.log("Previous save of this board was created under a different version, deleting it.");
+            
+            loadBoard(streamIndex, streamType, false);
+            return;
+        }
+
         isLoadWindowOpen.value = true;
 
         indexToLoad = streamIndex;
         steamToLoad = streamType;
+
+        document.addEventListener('keydown', handleLoadConfirmQuickExit);
     }
     else {
         loadBoard(streamIndex, streamType, false);
@@ -49,11 +77,18 @@ function handleContinueClick() {
 function handleNewBoardClick() {
     loadBoard(indexToLoad, steamToLoad, false);
 }
+
+function handleLoadConfirmQuickExit(event: KeyboardEvent) {
+    if (event.key === 'Escape') {
+        isLoadWindowOpen.value = false;
+        document.removeEventListener('keydown', handleLoadConfirmQuickExit);
+    }
+}
 </script>
 
 <template>
     <Transition name="slide">
-        <div class="welcome-screen-container" v-if="isOpen">
+        <div class="welcome-screen-container" ref="welcome-screen-container" v-if="isOpen">
             <h1>
                 Welcome to
                 <br>
@@ -64,11 +99,7 @@ function handleNewBoardClick() {
                 <h2>Select a stream:</h2>
 
                 <div v-for="streamType in getStreamLength()" :key="streamType">
-                    <StreamButton 
-                        :streamType="getStreamByIndex(streamType - 1)" 
-                        :streamIndex="streamType - 1"
-                        :isNewCategory="streamType === 4"
-                        @streamChoosed="onStreamClicked" />
+                    <StreamButton :streamType="getStreamByIndex(streamType - 1)" :streamIndex="streamType - 1" @streamChoosed="onStreamClicked" />
                 </div>
             </div>
 
@@ -97,7 +128,9 @@ function handleNewBoardClick() {
                     <a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> (Art)
                     <br>
                     <a href="https://sozaino.site" target="_blank">OKUMONO</a> (Background)
-                    <br />
+                    <br>
+                    <a v-if="additionalCredits.length > 0" :href="additionalCredits[0]" target="_blank">{{ additionalCredits[1] }}</a> {{ additionalCredits[2] }}
+                    <br v-if="additionalCredits.length > 0">
                     <br />
                     Highly inspired by <a href="https://github.com/cjmaxik" target="_blank">CJMAXiK's Bingos</a>.
                 </p>
@@ -111,6 +144,7 @@ function handleNewBoardClick() {
                 <span>Do you wish to continue your previous bingo board?</span>
                 <button class="continue" @click="handleContinueClick">Continue</button>
                 <button class="new" @click="handleNewBoardClick">New Board (your progress will be lost)</button>
+                <button class="close-btn btn" @click="isLoadWindowOpen = false">X</button>
             </div>
         </div>
     </Transition>
@@ -119,11 +153,14 @@ function handleNewBoardClick() {
 <style scoped>
 .welcome-screen-container {
     position: absolute;
-    top: 400px;
+    top: 410px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
     max-width: 100%;
+}
+.welcome-screen-container.event {
+    top: 420px;
 }
 
 .slide-enter-active,
@@ -273,7 +310,9 @@ p a {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    position: relative;
 }
+
 .load-window-content span {
     text-align: center;
     font-size: 24px;
@@ -281,6 +320,7 @@ p a {
     display: block;
     margin-bottom: 30px;
 }
+
 .load-window-content button {
     color: white;
     border: none;
@@ -291,19 +331,42 @@ p a {
     cursor: pointer;
     font-size: 16px;
 }
+
 .load-window-content button.continue {
     background-color: #456edf;
 }
+
 .load-window-content button.continue:hover {
     background-color: #3b5ecb;
     padding: 10px 20px;
 }
+
 .load-window-content button.new {
     background-color: #ee291b;
 }
+
 .load-window-content button.new:hover {
     background-color: #d01a0e;
     padding: 10px 20px;
+}
+
+.load-window-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    background-color: transparent;
+    color: black;
+    font-weight: 900;
+    font-size: 25px;
+    border-radius: 100%;
+    padding: 2px 8px;
+    margin: 0;
+}
+
+.load-window-content .close-btn:hover {
+    background-color: #a5afb4;
 }
 
 .fade-enter-active,

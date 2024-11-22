@@ -1,10 +1,10 @@
 export enum StreamType {
     Error = "ERROR",
-    SoulsLike = "Souls-like",
-    Art = "Art",
-    HorrorGames = "Horror Games",
-    RhythmGames = "Rhythm Games",
-    OtherGames = "Other Games"
+    SoulsLike = "⚔ Souls-like",
+    Art = "🎨 Art",
+    HorrorGames = "👻 Horror Games",
+    RhythmGames = "🎵 Rhythm Games",
+    OtherGames = "🃏 Other Games"
 }
 
 export function getStreamByIndex(index: number): StreamType {

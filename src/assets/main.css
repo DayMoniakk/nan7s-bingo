@@ -12,3 +12,27 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.events-canvas {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  filter: brightness(75%);
+}
+
+.event-christmas {
+  background-image: url("../background_christmas.png");
+  backdrop-filter: blur(1px) brightness(150%);
+}
+
+.event-new-year {
+  background-image: url("../background_new_year.png");
+  backdrop-filter: blur(2px) brightness(75%);
+}
+
+.event-halloween {
+  background-image: url("../background_halloween.png");
+  backdrop-filter: blur(1px) brightness(75%);
+}

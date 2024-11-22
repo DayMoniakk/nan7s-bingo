@@ -1,20 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref } from 'vue';
 
 const helpWindowOpen = ref(false);
 const helpWindowInner = ref(false);
 
-onMounted(() => {
-    document.addEventListener('keydown', handleQuickHelpExit);
-});
-
-onBeforeUnmount(() => {
-    document.removeEventListener('keydown', handleQuickHelpExit);
-});
-
 function handleQuickHelpExit(event: KeyboardEvent) {
-    if (!helpWindowOpen.value) return;
-
     if (event.key === 'Escape') {
         setHelpWindowOpen(false)
     }
@@ -25,9 +15,11 @@ function setHelpWindowOpen(state: boolean) {
 
     if (state) {
         helpWindowOpen.value = true
+        document.addEventListener('keydown', handleQuickHelpExit);
     }
     else
     {   
+        document.removeEventListener('keydown', handleQuickHelpExit);
         helpWindowInner.value = false
         setTimeout(() => {
             helpWindowOpen.value = false

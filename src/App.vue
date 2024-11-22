@@ -6,11 +6,17 @@ import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen.vue';
 import BingoScreen from './components/BingoScreen/BingoScreen.vue';
 import { StreamType } from './lib/StreamType';
 import DebugMenu from './components/DebugMenu.vue';
+import { checkTimeEvents } from './lib/TimeEvents';
+import { onMounted } from 'vue';
 
 const currentStreamIndex = ref(-1);
 const currentStreamType = ref(StreamType.Error);
 const currentLoadSavedBoard = ref(false);
 const mainStyleClass = ref('');
+
+onMounted(() => {
+  checkTimeEvents();
+});
 
 function handleOnStreamChoosed(streamIndex: number, streamType: StreamType, loadSavedBoard: boolean): void {
   currentStreamIndex.value = streamIndex;

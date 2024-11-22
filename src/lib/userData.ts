@@ -1,11 +1,13 @@
 import Cookies from 'js-cookie';
 import { StreamType } from './StreamType';
 import { isSavingDisabled } from './DebugHandler';
+import { version } from './BingoVersion';
 
 export interface BoardData {
     streamType: StreamType;
     tilesState: boolean[];
     seed: string;
+    bingoVersion: string;
 }
 
 class UserData {
@@ -59,6 +61,14 @@ class UserData {
     static hasSavedBoard(streamType: StreamType): boolean {
         const key = `bingo_${streamType}`;
         return Cookies.get(key) !== undefined;
+    }
+
+    static checkSavedBoardVersion(streamType: StreamType): boolean {
+        const data = this.loadBoard(streamType);
+        if (data) {
+            return data.bingoVersion === version;
+        }
+        return false;
     }
 
     static clearBoard(streamType: StreamType): void {

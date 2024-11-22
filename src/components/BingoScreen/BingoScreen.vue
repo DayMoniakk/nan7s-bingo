@@ -7,6 +7,7 @@ import { preparePrompts, getCurrentSeed } from '@/lib/prompts/PromptsManager';
 import UserData from '@/lib/UserData';
 import type { StreamType } from '@/lib/StreamType';
 import type { TilesLoadedEvent } from '@/lib/events/TilesLoaded';
+import { version } from '@/lib/BingoVersion';
 
 const props = defineProps<{
     streamIndex?: number,
@@ -58,6 +59,7 @@ function startBoard(bypassSavedData = false) {
         
         const seed = preparePrompts(props.streamIndex!);
         console.log(`Seed: ${seed}`);
+        document.dispatchEvent(new Event('DEBUG_OnBoardStarted'));
         return;
     }
 
@@ -81,6 +83,8 @@ function startBoard(bypassSavedData = false) {
         const seed = preparePrompts(props.streamIndex!);
         console.log(`Seed: ${seed}`);
     }
+
+    document.dispatchEvent(new Event('DEBUG_OnBoardStarted'));
 }
 
 function handleTilesChecked(index: number, value: boolean) {
@@ -91,7 +95,8 @@ function handleTilesChecked(index: number, value: boolean) {
     UserData.saveBoard({
         streamType: props.streamType!,
         tilesState: bingoTilesValues,
-        seed: getCurrentSeed()
+        seed: getCurrentSeed(),
+        bingoVersion: version
     });
 }
 
@@ -130,7 +135,8 @@ function saveOnUnload() {
     UserData.saveBoard({
         streamType: props.streamType!,
         tilesState: bingoTilesValues,
-        seed: getCurrentSeed()
+        seed: getCurrentSeed(),
+        bingoVersion: version
     }, true);  // Bypass debounce to save immediately
 }
 
