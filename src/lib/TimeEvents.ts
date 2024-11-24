@@ -41,7 +41,7 @@ function checkHalloween(date: Date) {
 }
 
 function checkChristmas(date: Date) {
-  if (date.getMonth() + 1 === 12) {
+  if (date.getMonth() + 1 === 12 && date.getDate() >= 15) {
     currentEvent = TimeEvent.Christmas;
     document.body.classList.add("event-christmas");
 
