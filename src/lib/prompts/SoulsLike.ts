@@ -39,5 +39,6 @@ export const soulsLikePrompts = [
   "Activates a lever or a mechanism",
   "Uses a summon",
   "Fails so close to the goal",
-  "Runs out of healing"
+  "Runs out of healing",
+  "Skips a dialogue",
 ];

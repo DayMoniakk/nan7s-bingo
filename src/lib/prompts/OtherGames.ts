@@ -28,4 +28,5 @@ export const otherGamesPrompts = [
   "Struggles to read a text/note",
   "Completes a mission/level",
   "Fails so close to the goal",
+  "Skips a dialogue",
 ];

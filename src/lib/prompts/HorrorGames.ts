@@ -25,4 +25,7 @@ export const horrorGamesPrompts = [
   "Insults an enemy",
   "Is paralyzed by fear",
   "Fails so close to the goal",
+  "Skips a dialogue",
+  "Gets jumpscared by a non-scary sound",
+  "Complains about the game",
 ];
