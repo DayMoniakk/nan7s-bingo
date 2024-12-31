@@ -41,19 +41,19 @@ function checkHalloween(date: Date) {
 }
 
 function checkChristmas(date: Date) {
-  if (date.getMonth() + 1 === 12 && date.getDate() >= 15) {
+  if (date.getMonth() + 1 === 12 && date.getDate() >= 15 && date.getDate() < 31) {
     currentEvent = TimeEvent.Christmas;
     document.body.classList.add("event-christmas");
 
     let skew = 1;
     skew = Math.max(0.8, skew - 0.001);
 
-    setInterval(() => {
-      const snow = confetti.create(createEventCanvas(), {
-        resize: true,
-        useWorker: true,
-      });
+    const snow = confetti.create(createEventCanvas(), {
+      resize: true,
+      useWorker: true,
+    });
 
+    setInterval(() => {
       snow({
         particleCount: 1,
         startVelocity: 0,
