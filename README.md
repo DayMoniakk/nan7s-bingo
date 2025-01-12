@@ -32,3 +32,9 @@ Build
 ```bash
   npm run build
 ```
+
+Preview the build
+
+```bash
+  npm run preview
+```
