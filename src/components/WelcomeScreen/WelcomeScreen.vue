@@ -125,7 +125,9 @@ function handleLoadConfirmQuickExit(event: KeyboardEvent) {
                     <a href="https://www.github.com/DayMoniakk" target="_blank">DayMoniakk</a> (Developer)
                     <br>
                     <a href="https://www.twitch.tv/nan7s_peluche" target="_blank">Nan7s_Peluche</a> &
-                    <a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> (Art)
+                    <a href="https://www.twitch.tv/gluelle" target="_blank">Gluelle</a> &
+                    <a href="https://www.instagram.com/cyber.joke/" target="_blank">Cyberblague</a>
+                    (Art)
                     <br>
                     <a href="https://sozaino.site" target="_blank">OKUMONO</a> (Background)
                     <br>

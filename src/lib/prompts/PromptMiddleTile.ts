@@ -19,7 +19,11 @@ const generic = [
     "smile.webp",
     "tanaka.webp",
     "tanakaOHOH.gif",
-    "zote.webp"
+    "zote.webp",
+    "nan-despair.png",
+    "nan-pog.png",
+    "nan-shocked-right.png",
+    "nan-sideways-judging.png",
 ];
 
 const soulsLike = [
@@ -28,4 +32,5 @@ const soulsLike = [
 
 const art = [
     "nans7.png",
+    "Nan7s-cyber.png"
 ];
