@@ -25,7 +25,6 @@ onMounted(() => {
                 credits.push("kinggodarts");
                 credits.push("(Christmas background)");
                 additionalCredits.value = credits;
-                welcomeScreenContainer.value?.classList.add("event");
                 break;
         }
     }, 100);
@@ -99,7 +98,7 @@ function handleLoadConfirmQuickExit(event: KeyboardEvent) {
                 <h2>Select a stream:</h2>
 
                 <div v-for="streamType in getStreamLength()" :key="streamType">
-                    <StreamButton :streamType="getStreamByIndex(streamType - 1)" :streamIndex="streamType - 1" @streamChoosed="onStreamClicked" />
+                    <StreamButton :streamType="getStreamByIndex(streamType - 1)" :streamIndex="streamType - 1" @streamChoosed="onStreamClicked" :isNewCategory="streamType === 5" />
                 </div>
             </div>
 
@@ -155,14 +154,11 @@ function handleLoadConfirmQuickExit(event: KeyboardEvent) {
 <style scoped>
 .welcome-screen-container {
     position: absolute;
-    top: 410px;
+    top: 440px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
     max-width: 100%;
-}
-.welcome-screen-container.event {
-    top: 420px;
 }
 
 .slide-enter-active,

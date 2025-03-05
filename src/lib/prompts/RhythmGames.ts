@@ -3,7 +3,7 @@ export const rhythmGamesPrompts = [
     "Succeeds a song",
     "Sings along with the song",
     "Tries to read chat mid-song",
-    "Beats her high score",
+    "Beats her highscore",
     "Is overwhelmed by the song speed",
     "Stays silent for at least 30 seconds",
     "Taps out of rhythm and loses a big combo",
@@ -27,4 +27,5 @@ export const rhythmGamesPrompts = [
     "Mentions loving a song",
     "Gets more than 80% of accuracy",
     "Plays a song for the first time",
+    "Plays on a viewer's requested song",
 ];

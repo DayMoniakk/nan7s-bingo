@@ -1,6 +1,6 @@
 export const horrorGamesPrompts = [
   "Gets scared by a harmless NPC or object",
-  "Stays crouched and refuses to move",
+  "Stays crouched and/or refuses to move",
   "Is stuck on a puzzle",
   "Turns around repeatedly to check behind her",
   "Pauses the game to calm down",

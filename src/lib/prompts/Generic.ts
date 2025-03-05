@@ -38,6 +38,8 @@ export const genericPrompts = [
   "Missclicks",
   "Checks Discord",
   "Mentions her tea",
-  "Mentions Warframe",
+  "Mentions a game she's playing off stream",
   "Pronounces a word in a very Frenchy way",
+  "Someone raids the stream",
+  "Mentions another streamer/friend",
 ];
