@@ -10,7 +10,7 @@ export const languageGuessrPrompts = [
     "Gets carried by chat",
     "Guesses right by sheer luck",
     "Guesses the right country but the wrong language",
-    "Encounters an easy language language",
+    "Encounters an easy language",
     "\"I have no idea\"",
     "The answer gets spoiled by a hint",
     "Gets called out by the website for her bad score",
